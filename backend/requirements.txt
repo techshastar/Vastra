@@ -1,0 +1,23 @@
+# ---------------------------------------------------------------------------
+# Base dependencies for the try-on backend.
+# These are the LIGHT dependencies you need to run the server on your own
+# machine (in "demo" mode) or on a free GPU notebook.
+#
+# NOTE: The heavy AI libraries (torch, diffusers, etc.) are installed inside
+# the Colab/Kaggle notebook (or the Hugging Face Space) because they are large
+# and version-sensitive. See "IDM_VTON_colab.ipynb" for those.
+# ---------------------------------------------------------------------------
+
+# Web framework for the REST endpoint (POST /tryon)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+
+# Image handling
+pillow>=10.0
+
+# The friendly web UI (also used to expose a public URL via share=True)
+gradio>=4.0
+
+# HTTP client (used by some helpers)
+requests>=2.31

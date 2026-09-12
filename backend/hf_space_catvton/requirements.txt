@@ -1,0 +1,17 @@
+# Minimal packages for the mask-free CatVTON Space.
+# (torch, gradio and `spaces` are pre-installed by Hugging Face Spaces,
+#  so they are deliberately NOT listed — same as the official CatVTON Space.)
+# Versions are unpinned on purpose, mirroring the official Space recipe.
+accelerate
+torchvision
+diffusers
+transformers
+peft
+pillow
+numpy<2
+opencv_python
+tqdm
+packaging
+scipy
+setuptools
+huggingface_hub
